@@ -1,15 +1,15 @@
 # CellCycle-RNAseq
 
-This repository contains the code for the paper
-&nbsp;&nbsp;&nbsp; A. Sukys and R. Grima, "Transcriptome-wide analysis of cell cycle-dependent bursty gene expression from single-cell RNA-seq data using mechanistic model-based inference" (2024).
+This repository contains the code for the paper: &nbsp; A. Sukys and R. Grima, "Cell-cycle dependence of bursty gene expression: insights from fitting mechanistic models to single-cell RNA-seq data" (2025).
 
 The code is used to perform mechanistic model-based inference on scRNA-seq data for a population of mouse embryonic stem cells (mESCs), where the cell-cycle phase (G1, S or G2/M) and cell age $\theta$ (position along the cell cycle) are known for each cell. The processed dataset used throughout is uploaded on [Zenodo](https://doi.org/10.5281/zenodo.10467234), and is based on the original work by Riba et al. [[1]](#1).
 
 ### Structure
 
 - `src` - main Julia code used to build quantitative models of gene expression, perform maximum likelihood estimation and model selection, and compute the confidence intervals using profile likelihood.
-- `analysis` - scripts for the mESC dataset-specific analysis, considering cell age-dependent ($\theta$-dependent) and cell age-independent ($\theta$-independent) mechanistic models using both cell-cycle-phase-specific (G1 or G2/M) data and merged (G1 + G2/M) data. In each case, the scripts are used to perform inference, model selection and confidence interval estimation.
+- `analysis` - scripts for the mESC dataset-specific analysis, considering cell age-dependent and cell age-independent mechanistic models using cell-age-resolved mRNA count data. 
 - `notebooks` - Jupyter notebooks (written in Julia) used to explore the results and to generate the figures in the paper.
+- `Mathematica` - Mathematica notebooks used to solve the piecewise ODEs for the means and variances of the age-dependent models.
 - `data` - directory to save the generated files, such as model-specific fits. 
 
 ### References:
