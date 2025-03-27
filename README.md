@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15096048.svg)](https://doi.org/10.5281/zenodo.15096048)
+
 # CellCycle-RNAseq
 
 This repository contains the code for the paper: &nbsp; A. Sukys and R. Grima, "Cell-cycle dependence of bursty gene expression: insights from fitting mechanistic models to single-cell RNA-seq data" (2025).
